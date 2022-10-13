@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import "./DayListItem.scss";
+import axios from "axios";
 
 const DayListItem = ({ selected, name, spots, setDay }) => {
   const dayClass = classNames("day-list__item", {
@@ -9,7 +10,7 @@ const DayListItem = ({ selected, name, spots, setDay }) => {
   });
 
   return (
-    <li className={dayClass} onClick={() => setDay(name)}>
+    <li className={dayClass} onClick={() => setDay(name)} data-testid="day">
       <h2 className="text--regular">{name}</h2>
 
       {spots === 0 && <h3 className="text--light">no spots remaining</h3>}
