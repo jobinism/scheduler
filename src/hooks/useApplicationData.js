@@ -53,10 +53,6 @@ const useApplicationData = () => {
 
   useEffect(() => {}, []);
 
-  /**
-   * Initializes application data via useEffect hook which runs only once, making calls to 3 different api's
-   * Then dispatches the data to update the application state via useReducer hook
-   */
 
   useEffect(() => {
     Promise.all([
@@ -74,12 +70,6 @@ const useApplicationData = () => {
   }, []);
 
   if (state.days.length > 0) console.log("Initial state: ", state);
-
-  /**
-   * Helper functions: update the state object via dispatch (useReducer hook)
-   * (1) setDay: updates the day when user clicks on DayListItem
-   * (2) updateSpots: updates the number of spots for a given day when a user books or cancels an interview
-   */
 
   const setDay = day => dispatch({ type: SET_DAY, day });
 
