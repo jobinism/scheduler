@@ -1,23 +1,33 @@
-# Interview Scheduler
+# Scheduler Project by Jarret Coyle
 
-## Setup
+Scheduler is an organizational application for booking interviews with students.
 
-Install dependencies with `npm install`.
+1. run `git clone https://github.com/jobinism/scheduler`
+2. run npm install
+3. run npm run start
 
-## Running Webpack Development Server
+## Final Product Screenshots
 
-```sh
-npm start
-```
+!["screenshot of App"](https://github.com/jobinism/scheduler/blob/master/public/images/App-View.png)
+!["screenshot of Book Interview Button"](https://github.com/jobinism/scheduler/blob/master/public/images/Book-Interview-Button.png)
 
-## Running Jest Test Framework
+!["screenshot of Booked Interview"](https://github.com/jobinism/scheduler/blob/master/public/images/Booked-Interview.png)
+!["screenshot of Hovered Day List"](https://github.com/jobinism/scheduler/blob/master/public/images/Days-List-Hovered.png)
 
-```sh
-npm test
-```
+## Dependencies
 
-## Running Storybook Visual Testbed
+- Node.js
+- Axios
+- React
+- classNames
+- react-dom
+- react-scripts
 
-```sh
-npm run storybook
-```
+
+## Getting Started
+
+- Install all dependencies (using the `npm install` command).
+- Run the development web server using the `npm run start`
+- Clone the Scheduler API from https://github.com/lighthouse-labs/scheduler-api and follow along with the steps in the README file
+- Run the Scheduler API server using `npm run start`
+- Go to `http://localhost:8000` 
